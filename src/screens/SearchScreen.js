@@ -21,7 +21,7 @@ const SearchScreen = () => {
       {errorMessage ? (
         <Text>{errorMessage}</Text>
       ) : (
-        <ScrollView style={styles.listStyle}>
+        <ScrollView>
           <ResultList
             title="Cost Effective"
             results={filterResultByPrice("$")}
@@ -41,9 +41,6 @@ const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
     backgroundColor: "#ffffff",
-  },
-  listStyle: {
-    marginLeft: 15,
   },
 });
 
