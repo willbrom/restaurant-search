@@ -1,13 +1,13 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 
-const ResultsDetail = ({ name, image, rating, reviews }) => {
+const ResultsDetail = ({ result }) => {
   return (
     <View style={styles.containerStyle}>
-      <Image style={styles.imageStyle} source={{ uri: image }} />
-      <Text style={styles.titleStyle}>{name}</Text>
+      <Image style={styles.imageStyle} source={{ uri: result.image_url }} />
+      <Text style={styles.titleStyle}>{result.name}</Text>
       <Text style={styles.ratingStyle}>
-        {rating} Stars, {reviews} Reviews
+        {result.rating} Stars, {result.review_count} Reviews
       </Text>
     </View>
   );
