@@ -1,3 +1,5 @@
 Restaurant search
 
-A restaurant React Native search app that uses yelp api to display restaurants and their rating.
+A restaurant search app that uses yelp api to display restaurants and their rating.
+
+Created with React Native
